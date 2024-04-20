@@ -1,4 +1,5 @@
-res://Grid.gd
-res://Main.gd
 res://main.tscn
-res://Camera2D.gd
+res://BuildingData.gd
+res://ItemData.gd
+res://RecipeData.gd
+res://CellData.gd
