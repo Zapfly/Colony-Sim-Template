@@ -1,5 +1,11 @@
 res://main.tscn
 res://BuildingData.gd
-res://ItemData.gd
-res://RecipeData.gd
-res://CellData.gd
+res://Scenes/Main/main.tscn
+res://Scripts/Debug.gd
+res://Scripts/Grid.gd
+res://Scripts/UnitData.gd
+res://Scripts/Unit.gd
+res://Scenes/Unit/Unit.gd
+res://Scenes/Unit/Unit.tscn
+res://Scenes/Main/Pathfinder.gd
+res://Scenes/Main/Main.gd

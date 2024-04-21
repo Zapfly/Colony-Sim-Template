@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=3 uid="uid://cd3jk8g7iwoxd"]
+
+[ext_resource type="Script" path="res://Scenes/Main/Main.gd" id="1_vqmtf"]
+[ext_resource type="Script" path="res://Scripts/Grid.gd" id="2_qvphc"]
+[ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="3_iw3n5"]
+[ext_resource type="Script" path="res://Scripts/Debug.gd" id="3_mphfr"]
+[ext_resource type="PackedScene" uid="uid://dweb2tpe6y7w0" path="res://Scenes/Unit/Unit.tscn" id="4_aas1k"]
+[ext_resource type="Script" path="res://Scenes/Unit/Unit.gd" id="5_go54m"]
+[ext_resource type="Script" path="res://Scenes/Main/Pathfinder.gd" id="6_orjlt"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_vqmtf")
+
+[node name="Grid" type="Node2D" parent="."]
+script = ExtResource("2_qvphc")
+show_debug = true
+
+[node name="Debug" type="Node2D" parent="Grid"]
+script = ExtResource("3_mphfr")
+
+[node name="Units" type="Node2D" parent="Grid"]
+
+[node name="Unit" parent="Grid/Units" instance=ExtResource("4_aas1k")]
+script = ExtResource("5_go54m")
+
+[node name="Pathfinder" type="Node" parent="Grid"]
+script = ExtResource("6_orjlt")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_iw3n5")
